@@ -8,13 +8,13 @@ $message    = 'Name: ' . $_POST['name'] . ' <br/>' .
               'Phone: ' . $_POST['phone'] . ' <br/>' .
               'Website: ' . $_POST['website'] . ' <br/>' .
               'Message: ' . $_POST['message'];
-
-if (@mail($to, $subject, $message, $headers))
-{
-  echo 'sent';
-}
-else
-{
-  echo 'failed';
-}
-?>
+mail($to, $subject, $message, $headers);
+// if (@mail($to, $subject, $message, $headers))
+//{
+  //echo 'sent';
+//}
+//else
+//{
+  //echo 'failed';
+//}
+//?>
